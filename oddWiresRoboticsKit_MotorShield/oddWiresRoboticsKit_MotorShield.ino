@@ -233,7 +233,8 @@ void servo_position(int newPos){
 
 // ultrasonic ping
 
-float ping(){
+float ping()
+{
     delay(50);                        // Wait 50ms between pings (about 20 pings/sec). 29ms should be the shortest delay between pings.
     unsigned int uS = sonar.ping();   // Send ping, get ping time in microseconds (uS).
     if (uS == 0)                      // out of range (0 = outside set distance range, no ping echo)
